@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:paddingEnd="80dp"
+            app:srcCompat="@drawable/backward" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:layout_weight="1"
+            android:text="CONTACT US"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Center for Peace and Spirituality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Get in touch with us"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#969696"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:gravity="top|start"
+        android:text="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/messagebox"
+        android:layout_width="337dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="#969696"
+        android:text="Please write your message"
+        android:gravity="top|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/purple_700"
+        android:text="SEND"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFFFFF"
+        android:textSize="2.5mm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messagebox" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <Button
+            android:id="@+id/whatsapppk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#1C912E"
+            android:drawableLeft="@drawable/baseline_whatsapp_24"
+            android:textAlignment="viewStart"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+            android:text="Whatsapp(PAK)" />
+
+        <Button
+            android:id="@+id/whatsappusa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_700"
+            android:drawableLeft="@drawable/baseline_whatsapp_24"
+            android:textAlignment="viewStart"
+            android:textSize="16dp"
+            android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+            android:text="Whatsapp(USA)" />
+
+        <Button
+            android:id="@+id/goodword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#B30B0B"
+            android:drawableLeft="@drawable/baseline_whatsapp_24"
+            android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+            android:text="GOODWORD BOOKS"
+            android:textAlignment="viewStart"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#035B83"
+            android:drawableLeft="@drawable/baseline_whatsapp_24"
+            android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+            android:text="VISIT OUR WEBSITE"
+            android:textAlignment="viewStart"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
